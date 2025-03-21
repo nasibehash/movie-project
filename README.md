@@ -5,4 +5,4 @@ npm install
 npm run dev
 
 # Project Demo
-[Demo](https://react-movies-project.app)
+[Demo](https://movie-project-virid-six.vercel.app/)
