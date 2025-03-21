@@ -1,0 +1,41 @@
+.sidebar {
+  > ul {
+    display: grid;
+    gap: 0.5rem;
+
+    margin-block-end: 4rem;
+
+    > li {
+      a,
+      button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        inline-size: 100%;
+
+        padding: 0.5rem;
+
+        border-radius: var(--border-radius-100);
+
+        svg {
+          margin-block-start: -0.25rem;
+        }
+      }
+
+      a {
+        &:hover {
+          background-color: var(--color-primary-fade);
+
+          color: var(--color-primary-hover);
+        }
+
+        &.active {
+          background-color: var(--color-primary-fade);
+
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}

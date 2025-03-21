@@ -1,0 +1,82 @@
+.text-input {
+  display: grid;
+  grid-template-areas: "title server-errors" "box box" "client-error client-error";
+  grid-template-columns: 1fr auto;
+
+  .client-error {
+    grid-area: client-error;
+
+    color: var(--color-danger);
+
+    margin-block-start: 0.25rem;
+
+    font-size: var(--fz-300);
+  }
+
+  .server-errors {
+    grid-area: server-errors;
+  }
+
+  label {
+    display: contents;
+
+    .title {
+      grid-area: title;
+
+      font-size: var(--fz-300);
+    }
+
+    .box {
+      grid-area: box;
+
+      color: var(--color-border);
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      padding: 0.5rem;
+
+      border: 1px solid currentColor;
+      border-radius: 0.25rem;
+
+      font-size: 1rem;
+      line-height: 1;
+
+      input {
+        flex: 1 1 0;
+
+        background-color: var(--color-surface-300);
+        color: inherit;
+
+        block-size: 1em;
+
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &:where(:has(input:not(:placeholder-shown))) {
+      .box {
+        color: var(--color-text-400);
+      }
+    }
+
+    &.invalid {
+      .title,
+      .box {
+        color: var(--color-danger);
+      }
+    }
+
+    &:focus-within {
+      .title,
+      .box {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

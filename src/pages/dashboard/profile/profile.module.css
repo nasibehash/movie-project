@@ -1,0 +1,11 @@
+.profile {
+  display: grid;
+  gap: 2rem;
+
+  inline-size: min(30rem, 100%);
+
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+}

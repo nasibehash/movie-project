@@ -1,0 +1,26 @@
+.toggle {
+  color: var(--color-danger);
+
+  &:not(&.visible) {
+    display: none;
+  }
+}
+
+.errors {
+  list-style-position: inside;
+
+  background-color: var(--color-surface-300);
+  box-shadow: var(--shadow);
+
+  display: grid;
+  gap: 0.5rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--color-danger);
+  border-radius: var(--border-radius-100);
+
+  > li {
+    line-height: 1.2;
+  }
+}

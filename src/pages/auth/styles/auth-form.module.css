@@ -1,0 +1,26 @@
+.auth-form {
+  background-color: var(--color-surface-300);
+  box-shadow: var(--shadow);
+
+  inline-size: min(20rem, 100%);
+
+  margin-inline: auto;
+  padding: 1rem;
+
+  border-radius: var(--border-radius-400);
+
+  form {
+    display: grid;
+    gap: 1rem;
+
+    margin-block: 1rem;
+  }
+
+  .change-form {
+    a {
+      color: var(--color-primary);
+
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.filter-card {
+  background-color: var(--color-surface-300);
+  box-shadow: var(--shadow);
+
+  display: grid;
+  gap: 0.5rem;
+
+  border-radius: var(--border-radius-400);
+
+  .title {
+    padding: 0.5rem 1rem;
+
+    font-size: var(--fz-500);
+    font-weight: 700;
+  }
+}

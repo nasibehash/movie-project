@@ -1,0 +1,28 @@
+.detail {
+  display: grid;
+  grid-template-areas: "name clear" "description description" "movies movies";
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+
+  .name {
+    grid-area: name;
+  }
+
+  .clear {
+    grid-area: clear;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .movies {
+    grid-area: movies;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 1rem;
+
+    margin-block-start: 1rem;
+  }
+}

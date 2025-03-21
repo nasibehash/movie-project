@@ -1,0 +1,33 @@
+.genre-filter {
+  .options {
+    overflow: auto;
+
+    display: grid;
+
+    max-block-size: 20rem;
+
+    scrollbar-width: thin;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      padding: 0.5rem 1rem;
+
+      cursor: pointer;
+
+      input {
+        block-size: 1em;
+        inline-size: 1em;
+
+        font-size: 1.25em;
+      }
+
+      &:hover,
+      &:has(:focus-visible) {
+        background-color: var(--color-primary-fade);
+      }
+    }
+  }
+}

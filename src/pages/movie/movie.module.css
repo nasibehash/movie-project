@@ -1,0 +1,19 @@
+.Movie {
+  display: grid;
+  grid-template-areas: "carousel sidebar" "body sidebar";
+  grid-template-columns: minmax(0, 1fr) 20rem;
+  align-items: start;
+  gap: 1rem;
+
+  > :nth-child(1) {
+    grid-area: sidebar;
+  }
+
+  > :nth-child(2) {
+    grid-area: carousel;
+  }
+
+  > :nth-child(3) {
+    grid-area: body;
+  }
+}
