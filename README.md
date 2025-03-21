@@ -5,3 +5,4 @@ npm install
 npm run dev
 
 # Project Demo
+[Demo](https://react-movies-project.app)
